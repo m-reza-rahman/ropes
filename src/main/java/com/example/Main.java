@@ -27,17 +27,17 @@ public class Main {
 			Rope.End end1 = box.getRandomRopeEnd();
 			Rope.End end2 = box.getRandomRopeEnd();
 
-			if (end1.getRope() == end2.getRope()) {
+			if (end1.rope() == end2.rope()) {
 				System.out.println("Ends of the same rope, so we are trying a loop and removing from the box.");
-				Rope rope = end1.getRope();
+				Rope rope = end1.rope();
 				box.removeRope(rope);
 				loopedRopes.add(rope);
 			} else {
 				System.out.println(
 						"Ends of two different ropes, so effectively creating a longer rope by tying the two.");
-				Rope rope1 = end1.getRope();
+				Rope rope1 = end1.rope();
 				box.removeRope(rope1);
-				Rope rope2 = end2.getRope();
+				Rope rope2 = end2.rope();
 				box.removeRope(rope2);
 
 				Rope tiedRope = new Rope();

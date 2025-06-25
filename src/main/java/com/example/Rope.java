@@ -22,15 +22,6 @@ public class Rope {
 		return end;
 	}
 
-	public class End {
-		private Rope rope;
-
-		public End(Rope rope) {
-			this.rope = rope;
-		}
-
-		public Rope getRope() {
-			return rope;
-		}
+	public record End(Rope rope) {
 	}
 }
