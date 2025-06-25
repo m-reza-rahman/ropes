@@ -40,8 +40,7 @@ public class Main {
 				Rope rope2 = end2.rope();
 				box.removeRope(rope2);
 
-				Rope tiedRope = new Rope();
-				tiedRope.setLenth(rope1.getLength() + rope2.getLength());
+				Rope tiedRope = new Rope(rope1.getLength() + rope2.getLength());
 				box.addRope(tiedRope);
 			}
 		}
