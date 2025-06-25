@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Random;
 
 public class Box {
+
 	private Random random = new Random();
 	private List<Rope> ropes = null;
 
