@@ -10,7 +10,7 @@ public class Rope {
 		length = UNIT_LENGTH;
 		end = new End(this);
 	}
-	
+
 	public Rope(int length) {
 		this.length = length;
 		end = new End(this);
